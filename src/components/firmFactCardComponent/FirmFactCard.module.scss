@@ -1,0 +1,33 @@
+.defaultStyles {
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+.default {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		background-color: #07C06A;
+		transition: background-color 0.3s;
+		& button {
+			background-color: transparent;
+			border: 2px solid #fff;
+			transition: background-color 0.3s;
+		}
+	}
+}
+
+.border {
+	background-color: #fff;
+	border: 15px solid transparent;
+	&:hover {
+		border: 15px solid #07C06A;
+		transition: background-color 0.3s;
+		& button {
+			background-color: #07C06A;
+			transition: background-color 0.3s;
+		}
+	}
+}
