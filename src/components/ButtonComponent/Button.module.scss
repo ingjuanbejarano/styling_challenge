@@ -1,10 +1,24 @@
 .defaultStyles {
-	width: 100%;
+	width: 310px;
 	height: 70px;
 	border-radius: 70px;
 	background-color: #2D3E4E;
 	color: #fff;
 	border-color: transparent;
+	font-family: Open Sans;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: -0.5px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 11px;
+	padding-left: 27px;
+	padding-right: 19px;
 
 	&:disabled {
 		background-color: #AAAAAA;
@@ -17,11 +31,28 @@
 }
 
 .default {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	p {
+		margin-right: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+	}
 }
 
-.border {
+.icon {
+	p {
+		margin-right: 0;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		line-height: 1.5em;
+		max-height: 3em;
+		word-wrap: break-word;
+	}
+}
+
+.card-border {
 	margin-top: 10px;
 }

@@ -1,6 +1,21 @@
 .defaultStyles {
 	box-sizing: border-box;
 	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		margin-top: 18px;
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: -0.5px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+	}
 }
 
 .default {
@@ -8,9 +23,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	&:hover {
 		background-color: #07C06A;
 		transition: background-color 0.3s;
+
 		& button {
 			background-color: transparent;
 			border: 2px solid #fff;
@@ -22,9 +39,11 @@
 .border {
 	background-color: #fff;
 	border: 15px solid transparent;
+
 	&:hover {
 		border: 15px solid #07C06A;
 		transition: background-color 0.3s;
+
 		& button {
 			background-color: #07C06A;
 			transition: background-color 0.3s;
