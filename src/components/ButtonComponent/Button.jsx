@@ -4,9 +4,9 @@ import searchIcon from "../../assets/searchIcon.svg";
 
 export const VariantButton = ({ variant, buttonText, cardVariant, disabled }) => {
 	return (
-		<button disabled={disabled} className={`${styles.defaultStyles} ${styles[variant]} ${styles[cardVariant]}`}>
+		<button disabled={disabled} className={`${styles.defaultStyles} ${styles[variant]} ${styles[`card-${cardVariant}`]}`}>
 			{variant === "icon" &&  <img src={searchIcon} alt="search icon" className={styles.searchIcon}/>}
-			{buttonText}
+			<p>{buttonText}</p>
 		</button>
 	);
 };
