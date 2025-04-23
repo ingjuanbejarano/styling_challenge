@@ -7,7 +7,7 @@ const FirmFact = () => {
   return (
     <div>
       <div className={styles.TitleContainer}>
-        <h1>Firm Facts test CI/CD 1</h1>
+        <h1>Firm Facts test CI/CD 2</h1>
         <img src={closeIcon} alt="close icon" />
       </div>
       <div className={styles.cardsContainer}>
