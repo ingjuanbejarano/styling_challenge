@@ -1,8 +1,9 @@
 name: Deploy React Vite to Azure
 on:
   push:
-    branches:
-      - main
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
 jobs:
   build-and-push:
