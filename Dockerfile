@@ -1,10 +1,12 @@
-# Etapa 1: Build con pnpm
+# Etapa de construcción
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-# Habilita corepack (para pnpm) y copia archivos de dependencias
-RUN corepack enable && corepack prepare pnpm@latest --activate
-COPY package.json pnpm-lock.yaml* ./
+# Instala pnpm@10.9.0 explícitamente
+RUN corepack enable && corepack prepare pnpm@10.9.0 --activate
+
+# Copia los archivos de bloqueo (sin wildcard *)
+COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 # Copia el código y construye la app
